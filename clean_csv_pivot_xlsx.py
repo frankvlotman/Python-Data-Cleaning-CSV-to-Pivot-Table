@@ -5,7 +5,7 @@ def process_csv_and_create_pivot(csv_file_path, excel_file_path):
     df = pd.read_csv(csv_file_path, skiprows=2)
     df = df.rename(columns=lambda x: x.strip())
 
-    # Include only the specified columns
+    # Include only the specified columns & removal of unwanted columns
     columns_to_include = ['car_make', 'car_model', 'car_vin_no', 'color', 'quantity', 'amount']
     df_filtered = df[columns_to_include]
 
@@ -15,7 +15,7 @@ def process_csv_and_create_pivot(csv_file_path, excel_file_path):
     # Save the pivot table to an Excel file
     pivot_table.to_excel(excel_file_path)
 
-# Example usage
+# Source file & output file paths
 csv_file_path = 'C:\\Users\\Frank\\Desktop\\dataset.csv'  # Path to CSV file
 excel_file_path = 'C:\\Users\\Frank\\Desktop\\results.xlsx'  # Path for the output Excel file
 
