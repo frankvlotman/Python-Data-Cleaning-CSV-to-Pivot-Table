@@ -1,2 +1,1 @@
-# Python-Data-Cleaning-CSV-to-Pivot-Table
-Cleaning a CSV file for a pivot table to an xlsx file
+Data Cleaning and Transformation: Script for cleansing CSV dataset and generating a pivot table, outputting in XLSX format.
